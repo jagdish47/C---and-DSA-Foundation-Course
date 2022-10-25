@@ -8,5 +8,9 @@ int main() {
     int b = 20;
     cout<<(b++)<<endl;
 
+
+    cout<<(4 + 2 + "abc")<<endl;
+    cout<<"abc" + 4 + 2<<endl;
+
     return 0;
 }
