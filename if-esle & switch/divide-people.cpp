@@ -10,12 +10,16 @@ int main() {
     if(age < 12){
         cout<<"child"<<endl;
     }
-    else if(age > 12 && age < 18){
-        cout<<"teenager"<<endl;
+    else if(age > 18 && age < 60){
+        cout<<"adult"<<endl;
+    }
+
+    else if(age > 60){
+        cout<<"senior citizen"<<endl;
     }
 
     else{
-        cout<<"adult"<<endl;
+        cout<<"teenager"<<endl;
     }
 
     return 0;
