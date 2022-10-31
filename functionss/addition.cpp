@@ -23,9 +23,11 @@ float addition(float a, float b) {
 
 int main() {
 
+    float a = 5.5;
+    float b = 5.3;
     cout<<addition(10, 20)<<endl;
     cout<<addition(10, 20, 30)<<endl;
-    cout<<addition(10.5, 20.2)<<endl;
+    cout<<addition(a, b)<<endl;
 
     return 0;
 }
