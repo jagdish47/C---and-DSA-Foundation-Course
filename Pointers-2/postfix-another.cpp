@@ -10,7 +10,7 @@ int main()
 
     cout << *ptr << endl;
 
-    *ptr++;
+    (*ptr)++;
 
     cout << *ptr << endl;
 
