@@ -3,19 +3,21 @@ using namespace std;
 
 int main()
 {
-    int num = 4;
 
-    for (int i = 1; i <= num; i++)
+    int n = 4;
+
+    for (int i = 1; i <= n; i++)
     {
 
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= (i * 2) - 1; j++)
         {
-
-            if (j % 2 == 1)
+            if (j % 2 != 0)
             {
                 cout << j << " ";
             }
         }
         cout << endl;
     }
+
+    return 0;
 }
