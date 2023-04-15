@@ -5,26 +5,15 @@ using namespace std;
 int main()
 {
 
-    vector<int> v{1, 2, 3, 1, 2};
+    vector<int> vec{1, 2, 3, 1, 2};
 
-    for (int i = 0; i < v.size(); i++)
+    for (int i = 0; i < vec.size(); i++)
     {
 
-        int count = 1;
-        for (int j = 0; j < v.size(); i++)
+        for (int j = i + 1; j < vec.size(); j++)
         {
 
-            if (v[i] == v[j])
-            {
-                count++;
-                cout << count << endl;
-            }
-        }
-
-        if (count == 1)
-        {
-            cout << v[i] << " " << endl;
-            break;
+            cout << vec[i] << " " << vec[j] << endl;
         }
     }
 
