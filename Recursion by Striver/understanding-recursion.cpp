@@ -1,17 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void print()
+void print(int count)
 {
 
-    cout << "1"
-         << " ";
-    print();
+    if (count == 5)
+    {
+        return;
+    }
+
+    cout << count << endl;
+    print(count + 1);
+    cout << "ended " << count << endl;
 }
 
 int main()
 {
-
-    print();
+    int count = 0;
+    print(count);
     return 0;
 }
