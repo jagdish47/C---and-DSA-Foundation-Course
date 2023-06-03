@@ -1,22 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int insertPosition(vector<int> &vec, int insert)
+int floorBinarySearch(vector<int> &arr, int target)
 {
 
-    int ans = -1;
-
     int start = 0;
-    int end = vec.size();
+    int end = arr.size() - 1;
+
+    int ans = -1;
 
     while (start <= end)
     {
 
         int mid = start + (end - start) / 2;
 
-        if (vec[mid] >= insert)
+        if (arr[mid] >= target)
         {
-            ans = mid;
+            ans = arr[mid];
             end = mid - 1;
         }
         else
@@ -30,12 +30,13 @@ int insertPosition(vector<int> &vec, int insert)
 
 int main()
 {
-    vector<int> vec{1, 2, 4, 7};
 
-    // you can insert 6 in between 4-7 means 3rd position
-    int insert = 6;
+    vector<int> arr{4, 5, 7, 9, 11, 17, 20};
 
-    int ans = insertPosition(vec, insert);
+    int target = 10;
+
+    int ans = floorBinarySearch(arr, target);
+
     cout << ans << endl;
 
     return 0;
